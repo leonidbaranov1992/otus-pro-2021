@@ -1,3 +1,5 @@
+
+@WriteAMessage
 Feature: I can run test-case many times
 
   Scenario: I can write a message

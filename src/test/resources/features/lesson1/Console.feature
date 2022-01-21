@@ -1,3 +1,4 @@
+@Ignored
 Feature: I can write anything to Console
 
   As a developer I can write "sout"

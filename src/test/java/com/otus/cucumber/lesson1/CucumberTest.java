@@ -6,10 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        features = {"src/test/resources/features/lesson1", "src/test/resources/feature2"},
+        tags = "@FirstScenario",
         plugin = {"html:target/cucumber/html", "json:target/cucumber/json/cucumber.json", "pretty"},
         monochrome = true,
-        features = "src/test/resources/features/lesson1/AutomatedTesting.feature",
         glue = {"com.otus.cucumber.lesson1"}
+
 )
 public class CucumberTest {
 }

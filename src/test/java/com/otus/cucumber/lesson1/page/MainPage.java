@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,7 +32,6 @@ public class MainPage {
     @FindBy(css = ".btn-primary.btn-small.login-button")
     private WebElement loginButton;
 
-    @PostConstruct
     private void init() {
         PageFactory.initElements(driver, this);
         buttons.put("войти", loginButton);
